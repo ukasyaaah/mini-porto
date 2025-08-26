@@ -16,6 +16,16 @@
         font-family: sans-serif;
         color: olive;
       }
+      header::selection,
+      footer::selection {
+        background-color: oldlace;
+        color: olive;
+      }
+      main::selection {
+        background-color: olive;
+        color: oldlace;
+      }
+
       header {
         background-color: olive;
         padding: 40px;
@@ -32,10 +42,10 @@
       .container {
         display: flex;
         justify-self: center;
-
         color: oldlace;
-        line-height: 0.5;
+        line-height: 0.7;
         align-items: center;
+        gap: 32px;
         @media only screen and (max-width: 600px) {
           display: block;
         }
@@ -44,10 +54,6 @@
       .profileHolder {
         flex: 1;
         text-align: center;
-
-        @media only screen and (min-width: 600px) {
-          margin-right: 35px;
-        }
       }
       .profileInfo {
         margin: 0 auto;
