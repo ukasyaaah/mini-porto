@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Porto</title>
+    <style>
+      @media only screen and (max-width: 600px) {
+        .container {
+          display: block;
+        }
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: olive;
+      }
+      header {
+        background-color: olive;
+        padding: 40px;
+
+        border-end-end-radius: 8px;
+        border-end-start-radius: 8px;
+
+        @media only screen and (max-width: 600px) {
+          justify-items: center;
+          text-align: center;
+        }
+      }
+
+      .container {
+        display: flex;
+        justify-self: center;
+
+        color: oldlace;
+        line-height: 0.5;
+        align-items: center;
+        @media only screen and (max-width: 600px) {
+          display: block;
+        }
+      }
+
+      .profileHolder {
+        flex: 1;
+        text-align: center;
+
+        @media only screen and (min-width: 600px) {
+          margin-right: 35px;
+        }
+      }
+      .profileInfo {
+        margin: 0 auto;
+        max-width: 900px;
+      }
+      .profile {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 4px solid;
+        box-shadow: 8px 7px rgba(0, 0, 0, 0.167);
+      }
+
+      .button {
+        margin: 2px;
+        padding: 9px;
+        background-color: oldlace;
+        color: olive;
+        font-weight: bold;
+        border: 2px solid oldlace;
+        box-shadow: 8px 7px rgba(0, 0, 0, 0.167);
+        border-radius: 8px;
+      }
+
+      .button:hover {
+        cursor: pointer;
+        background-color: olive;
+        color: oldlace;
+        box-shadow: 8px 7px rgba(253, 245, 230, 0.167);
+      }
+
+      main {
+        margin: 10px;
+        justify-self: center;
+      }
+
+      section {
+        border: 2px solid;
+        margin: 12px;
+        padding: 20px;
+        max-width: 600px;
+        background-color: oldlace;
+        border: 2px solid olive;
+        border-radius: 8px;
+        box-shadow: 8px 7px rgba(0, 0, 0, 0.167);
+
+        .aboutText {
+          line-height: 1.5;
+        }
+      }
+
+      .barContainer {
+        width: 100%;
+        height: 20px;
+        background-color: rgb(215, 215, 215);
+        border-radius: 6px;
+
+        .barFilling {
+          width: 40%;
+          height: 20px;
+          background-color: coral;
+          border-radius: 6px;
+        }
+
+        .blue {
+          width: 30%;
+          background-color: blue;
+        }
+
+        .yellow {
+          width: 70%;
+          background-color: gold;
+        }
+      }
+
+      footer {
+        background-color: olive;
+        color: oldlace;
+        text-align: center;
+        font-weight: 700;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        a {
+          color: oldlace;
+
+          text-decoration-line: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="profileHolder">
+          <img class="profile" src="profile2.png" alt="" />
+        </div>
+        <div class="profileInfo">
+          <h1>AMBATUKAAAAM</h1>
+          <p>an Ojnfjnsdndf jengjegj Person</p>
+          <div>
+            <button class="button">Hire Me</button>
+            <button class="button">Download My CV</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>About me</h1>
+        <p class="aboutText">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+          assumenda aspernatur omnis fuga suscipit, at inventore quo id deleniti
+          vitae corrupti totam rem consectetur eaque optio. Quia consequuntur
+          dignissimos voluptatem.
+        </p>
+      </section>
+
+      <section>
+        <h1>Skills</h1>
+        <div class="skillBar">
+          <h3>HTML</h3>
+          <div class="barContainer">
+            <div class="barFilling"></div>
+          </div>
+        </div>
+        <div class="skillBar">
+          <h3>CSS</h3>
+          <div class="barContainer">
+            <div class="barFilling blue"></div>
+          </div>
+        </div>
+        <div class="skillBar">
+          <h3>JS</h3>
+          <div class="barContainer">
+            <div class="barFilling yellow"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 <a href="https://github.com/ukasyaaah">ukasyaaah</a></p>
+    </footer>
+  </body>
+</html>
